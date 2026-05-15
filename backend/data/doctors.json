@@ -1,0 +1,67 @@
+[
+  {
+    "id": "d001",
+    "name": "Dr. Akbar Tashmatov",
+    "specialty": "Cardiology",
+    "department": "Cardiology Department",
+    "email": "a.tashmatov@caretrack.uz",
+    "phone": "+998 90 123 4567",
+    "licenseNumber": "UZ-MED-2019-4521",
+    "experience": 12,
+    "status": "active",
+    "createdAt": "2026-01-05T08:30:00.000Z",
+    "updatedAt": "2026-05-15T07:47:12.035Z"
+  },
+  {
+    "id": "d002",
+    "name": "Dr. Maftuna Ergasheva",
+    "specialty": "Neurology",
+    "department": "Neurology Department",
+    "email": "m.ergasheva@caretrack.uz",
+    "phone": "+998 91 234 5678",
+    "licenseNumber": "UZ-MED-2017-3302",
+    "experience": 15,
+    "status": "active",
+    "createdAt": "2026-01-05T09:00:00.000Z",
+    "updatedAt": "2026-01-05T09:00:00.000Z"
+  },
+  {
+    "id": "d003",
+    "name": "Dr. Sardor Mirzayev",
+    "specialty": "Dermatology",
+    "department": "Dermatology Department",
+    "email": "s.mirzayev@caretrack.uz",
+    "phone": "+998 93 345 6789",
+    "licenseNumber": "UZ-MED-2020-5614",
+    "experience": 8,
+    "status": "active",
+    "createdAt": "2026-01-06T08:00:00.000Z",
+    "updatedAt": "2026-01-06T08:00:00.000Z"
+  },
+  {
+    "id": "d004",
+    "name": "Dr. Zulfiya Karimova",
+    "specialty": "Orthopaedics",
+    "department": "Orthopaedics Department",
+    "email": "z.karimova@caretrack.uz",
+    "phone": "+998 94 456 7890",
+    "licenseNumber": "UZ-MED-2016-2198",
+    "experience": 18,
+    "status": "active",
+    "createdAt": "2026-01-06T09:00:00.000Z",
+    "updatedAt": "2026-01-06T09:00:00.000Z"
+  },
+  {
+    "id": "d005",
+    "name": "Dr. Bobur Hasanov",
+    "specialty": "General Practice",
+    "department": "General Practice",
+    "email": "b.hasanov@caretrack.uz",
+    "phone": "+998 97 567 8901",
+    "licenseNumber": "UZ-MED-2018-3874",
+    "experience": 10,
+    "status": "active",
+    "createdAt": "2026-01-07T08:00:00.000Z",
+    "updatedAt": "2026-01-07T08:00:00.000Z"
+  }
+]

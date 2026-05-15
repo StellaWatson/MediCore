@@ -1,0 +1,29 @@
+[
+  {
+    "id": "u001",
+    "name": "Admin User",
+    "email": "admin@caretrack.uz",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "role": "administrator",
+    "createdAt": "2026-01-01T08:00:00.000Z",
+    "isActive": true
+  },
+  {
+    "id": "u002",
+    "name": "Dr. Nilufar Rashidova",
+    "email": "clinician@caretrack.uz",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "role": "clinician",
+    "createdAt": "2026-01-01T08:00:00.000Z",
+    "isActive": true
+  },
+  {
+    "id": "u003",
+    "name": "Kamola Yusupova",
+    "email": "receptionist@caretrack.uz",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "role": "receptionist",
+    "createdAt": "2026-01-01T08:00:00.000Z",
+    "isActive": true
+  }
+]
