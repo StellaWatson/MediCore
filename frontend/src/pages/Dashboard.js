@@ -3,9 +3,9 @@ import Layout from '../components/Layout';
 import api from '../utils/api';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { 
-  PieChart, Pie, Cell, 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer 
+import {
+  PieChart, Pie, Cell,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
 const Dashboard = () => {
@@ -149,24 +149,24 @@ const Dashboard = () => {
           {stats?.recentPatients?.length === 0
             ? <div className="empty-state"><div className="icon">👤</div><div>No patients registered yet</div></div>
             : <table className="ct-table">
-                <thead><tr><th>Patient</th><th>Assigned Doctor</th><th>Registered</th></tr></thead>
-                <tbody>
-                  {stats?.recentPatients?.map(p => (
-                    <tr key={p.id} style={{ cursor: 'pointer' }} onClick={() => navigate(`/patients/${p.id}`)}>
-                      <td>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                          <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 12 }}>
-                            {p.firstName[0]}{p.lastName[0]}
-                          </div>
-                          <strong>{p.firstName} {p.lastName}</strong>
+              <thead><tr><th>Patient</th><th>Assigned Doctor</th><th>Registered</th></tr></thead>
+              <tbody>
+                {stats?.recentPatients?.map(p => (
+                  <tr key={p.id} style={{ cursor: 'pointer' }} onClick={() => navigate(`/patients/${p.id}`)}>
+                    <td>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                        <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 12 }}>
+                          {p.firstName[0]}{p.lastName[0]}
                         </div>
-                      </td>
-                      <td style={{ fontSize: 13, color: '#64748b' }}>{p.doctorName}</td>
-                      <td style={{ fontSize: 13, color: '#64748b' }}>{new Date(p.registeredAt).toLocaleDateString('en-GB')}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+                        <strong>{p.firstName} {p.lastName}</strong>
+                      </div>
+                    </td>
+                    <td style={{ fontSize: 13, color: '#64748b' }}>{p.doctorName}</td>
+                    <td style={{ fontSize: 13, color: '#64748b' }}>{new Date(p.registeredAt).toLocaleDateString('en-GB')}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           }
         </div>
 
@@ -179,17 +179,17 @@ const Dashboard = () => {
           {stats?.recentDiseases?.length === 0
             ? <div className="empty-state"><div className="icon">🩺</div><div>No diagnoses recorded yet</div></div>
             : <table className="ct-table">
-                <thead><tr><th>Diagnosis</th><th>Patient</th><th>Severity</th></tr></thead>
-                <tbody>
-                  {stats?.recentDiseases?.map(d => (
-                    <tr key={d.id}>
-                      <td><strong style={{ display: 'block', marginBottom: 4 }}>{d.name}</strong><span style={{ display: 'inline-block', background: '#f1f5f9', color: '#475569', padding: '2px 8px', borderRadius: 4, fontSize: 11, fontWeight: 600 }}>{d.icdCode}</span></td>
-                      <td style={{ fontSize: 13, color: '#64748b' }}>{d.patientName}</td>
-                      <td><span className={`badge-severity-${d.severity}`}>{d.severity}</span></td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <thead><tr><th>Diagnosis</th><th>Patient</th><th>Severity</th></tr></thead>
+              <tbody>
+                {stats?.recentDiseases?.map(d => (
+                  <tr key={d.id}>
+                    <td><strong style={{ display: 'block', marginBottom: 4 }}>{d.name}</strong><span style={{ display: 'inline-block', background: '#f1f5f9', color: '#475569', padding: '2px 8px', borderRadius: 4, fontSize: 11, fontWeight: 600 }}>{d.icdCode}</span></td>
+                    <td style={{ fontSize: 13, color: '#64748b' }}>{d.patientName}</td>
+                    <td><span className={`badge-severity-${d.severity}`}>{d.severity}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           }
         </div>
       </div>

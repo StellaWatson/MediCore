@@ -56,20 +56,6 @@
     "updatedAt": "2026-01-12T12:00:00.000Z"
   },
   {
-    "id": "dis005",
-    "patientId": "p004",
-    "icdCode": "L20.9",
-    "name": "Atopic Dermatitis",
-    "description": "Chronic atopic eczema affecting arms and neck. Worsens with stress and certain fabrics.",
-    "severity": "mild",
-    "status": "ongoing",
-    "diagnosedDate": "2026-01-13T09:00:00.000Z",
-    "treatment": "Topical corticosteroids (Hydrocortisone 1%), emollient cream twice daily, antihistamine",
-    "notes": "Patch testing arranged. Allergen avoidance advice given.",
-    "createdAt": "2026-01-13T09:00:00.000Z",
-    "updatedAt": "2026-01-13T09:00:00.000Z"
-  },
-  {
     "id": "dis006",
     "patientId": "p005",
     "icdCode": "M16.11",
